@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  
+  <!-- This is the Header, where all our css and js gets loaded -->
+  <head>
+    <title>Chess.js</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+	<script src="js/chessboard-1.0.0.min.js"></script>
+	<script src="js/chess.js"></script>
+	<script src="js/chess-setup.js"></script>
+  </head>
+  
+  <!-- This is the Body, where the content gets put -->
+  <body>
+    <div id="board1" style="width: 600px"></div>
+	<label>Status:</label>
+	<div id="status"></div>
+	<label>FEN:</label>
+	<div id="fen"></div>
+	<label>PGN:</label>
+	<div id="pgn"></div>
+  </body>
+
+  <!-- This has to exist for some reason -->
+  <script> 
+	var board1 = Chessboard('board', config);
+  </script>
+
+</html>
